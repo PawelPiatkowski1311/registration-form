@@ -3,8 +3,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formularz</title>
-        <link rel="stylesheet" href="../../Style/StylGlobalny.css">
-        <script src="../../Skrypty/walidacja.js"></script>
+        <link rel="stylesheet" href="../styles/globalStyle.css">
+        <script src="../scripts/validation.js"></script>
     </head>
     <body>
         <header>
@@ -13,7 +13,7 @@
         <main>
             <center>
                 <div class="formularz">
-                    <form action="../../Skrypty/obslugadanych.php" method="post">
+                    <form action="../scripts/formHandling.php" method="post">
                         e-mail<br>
                         <input type="email" name="email" id="email" required onBlur="walidacjaEmail()"><br>
                         <p id="trescBleduEmail" class="blad"></p>
