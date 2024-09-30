@@ -1,0 +1,123 @@
+body {
+    background-color: black;
+    background-image: url("../Zdjęcia/tło.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Poppins';
+    color: white;
+}
+header {
+    height: 30%;
+    font-size: 500%;
+    display: flex;
+    justify-content: center; /* Wycentrowanie w poziomie */
+    align-items: flex-end; /* Ustawienie elementów na dole */
+}
+.tytul {
+    margin: 0; /* Wyeliminowanie marginesów */
+    padding-bottom: 20px; /* Opcjonalnie: dystans od dołu headera */
+    display: flex;
+    justify-content: center; /* Wycentrowanie w poziomie */
+    align-items: flex-end; /* Ustawienie elementów na dole */
+}
+main {
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Ustaw elementy w pionie */
+    justify-content: flex-end; /* Przycisk będzie na dole */
+}
+.zapiszsie {
+    padding: 16px 32px;
+    font-size: 16px;
+    margin-top: 100px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.formularz {
+    width: 20%;
+    height: auto;
+}
+form {
+    background-color: #505050b7;
+    border-radius: 6px;
+    padding: 20px;
+}
+p {
+    font-family: 'Poppins Light';
+    font-size: 10px;
+    color: #ff4949;
+}
+input {
+    border: 2px solid #ffa600;
+    border-radius: 4px;
+    background-color: #ffffff00;
+    color: white;
+    margin-bottom: 5px;
+}
+input:valid {
+    background-color: #ffa6003f;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    appearance: textfield;
+}
+form .button {
+    padding: 10px 32px;
+}
+.data {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie poziome */
+}
+section {
+    float: left;
+    margin-top: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+section .data {
+    height: 25px;
+    width: auto;
+}
+select {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ffa600;
+    border: 2px solid #ffa600;
+    font-family: 'Poppins Medium';
+    color: white;
+}
+.oswiadczenie {
+    font-family: 'Poppins Light';
+    font-size: 10px;
+    float: left;
+}
+.oswiadczenie input{
+    left: 9px;
+    top: 5px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+}
+button,.button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; /* Zmieniono z display: contents na inline-block */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #ffa600;
+    border: 2px solid #ffa600;
+    font-family: 'Poppins Medium';
+    color: white;
+}
+button:hover,.button:hover {
+    background-color: #d38900;
+    color: white;
+}

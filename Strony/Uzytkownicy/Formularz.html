@@ -1,0 +1,69 @@
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularz</title>
+        <link rel="stylesheet" href="../../Style/StylGlobalny.css">
+        <script src="../../Skrypty/walidacja.js"></script>
+    </head>
+    <body>
+        <header>
+            <h2 class="tytul">PODAJ DANE</h2>
+        </header>
+        <main>
+            <center>
+                <div class="formularz">
+                    <form action="../../Skrypty/obslugadanych.php" method="post">
+                        e-mail<br>
+                        <input type="email" name="email" id="email" required onBlur="walidacjaEmail()"><br>
+                        <p id="trescBleduEmail" class="blad"></p>
+                        telefon<br>
+                        <input type="tel" id="telefon" name="telefon" pattern="\d\d\d\d\d\d\d\d\d" maxlength="9" required onBlur="walidacjaTelefon()"><br>
+                        <p id="trescBleduTelefon" class="blad"></p>
+                        imię<br>
+                        <input type="text" name="imie" required><br>
+                        nazwisko<br>
+                        <input type="text" name="nazwisko" required><br><br>
+                        data urodzenia
+                        <div class="data">
+                            <center>
+                                <section>
+                                    dzień<br>
+                                    <input type="number" name="dzien" min="1" max="31" class="data" required>
+                                </section>
+                                <section>
+                                    miesiąc<br>
+                                    <select name="miesiac" class="data">
+                                        <option value="1">Styczeń</option>
+                                        <option value="2">Luty</option>
+                                        <option value="3">Marzec</option>
+                                        <option value="4">Kwiecień</option>
+                                        <option value="5">Maj</option>
+                                        <option value="6">Czerwiec</option>
+                                        <option value="7">Lipiec</option>
+                                        <option value="8">Sierpień</option>
+                                        <option value="9">Wrzesień</option>
+                                        <option value="10">Październik</option>
+                                        <option value="11">Listopad</option>
+                                        <option value="12">Grudzień</option>
+                                    </select>
+                                </section>
+                                <section>
+                                    rok<br>
+                                    <input type="number" name="rok" min="1900" max="2024" class="data" required>
+                                </section>
+                            </center><br>
+                        </div>
+                        <div class="oswiadczenie">
+                            <input type="checkbox" name="akcept" required>
+                                Oświadczam, że podane przez mnie dane są zgodne ze stanem faktycznym oraz akceptuje możliwość ich sprawdzenia przy wstępie.
+                        </div><br><br><br><br>
+                        <input type="submit" value="Prześlij" class="button">
+                    </form>
+                </div>
+            </center>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
