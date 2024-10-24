@@ -21,7 +21,7 @@ header {
     align-items: flex-end; /* Ustawienie elementów na dole */
 }
 main {
-    height: auto;
+    min-height: 50%;
     display: flex;
     flex-direction: column; /* Ustaw elementy w pionie */
     justify-content: flex-end; /* Przycisk będzie na dole */
@@ -29,8 +29,8 @@ main {
 .zapiszsie {
     padding: 16px 32px;
     font-size: 16px;
-    margin-top: 100px;
-    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-bottom: 200px;
     margin-left: 4px;
     margin-right: 4px;
 }

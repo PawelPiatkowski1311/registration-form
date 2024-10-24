@@ -1,9 +1,9 @@
 <?php
 // Dane do połączenia z bazą danych
-$host = 'localhost';   // Adres hosta
-$dbname = 'registerform'; // Nazwa bazy danych
-$username = 'root';    // Nazwa użytkownika MySQL
-$password = '';        // Hasło do MySQL (zostaw puste, jeśli nie masz hasła)
+$host = '	sql205.infinityfree.com';   // Adres hosta
+$dbname = 'if0_37424006_registerform'; // Nazwa bazy danych
+$username = 'if0_37424006';    // Nazwa użytkownika MySQL
+$password = '9X0ZvIieTJzIf0f ';        // Hasło do MySQL (zostaw puste, jeśli nie masz hasła)
 
 // Tworzenie połączenia z bazą danych
 $conn = mysqli_connect($host, $username, $password, $dbname);
